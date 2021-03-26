@@ -9,7 +9,7 @@
         <title>Страница переписки</title>
     </head>
     <h1>Давай пообщаемся</h1>
-    <jsp:useBean id="user" class="by.it_academy.jd2.web.servlets.chat.User" scope="application"/>
+    <jsp:useBean id="user" class="master.User" scope="application"/>
     Твой логин: <%= user.getUser()%><br>
     Твое ФИО: <%= user.getFio()%><br>
     <table style="with: 50%">

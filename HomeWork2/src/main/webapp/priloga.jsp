@@ -8,7 +8,7 @@
     <meta charset="utf-8">
 </head>
 <body>
-<jsp:useBean id="user" class="by.it_academy.jd2.web.servlets.chat.User" scope="application"/>
+<jsp:useBean id="user" class="master.User" scope="application"/>
 <form action="proga" method="post">
     Введите ваши сообщение, <%= user.getUser()%><br>
     Для просмотра сообщений введите "exit"<br>

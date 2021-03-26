@@ -8,7 +8,7 @@
 </head>
     <body>
         <h1>Регистрация успешно завершена</h1>
-        <jsp:useBean id="user" class="by.it_academy.jd2.web.servlets.chat.User" scope="application"/>
+        <jsp:useBean id="user" class="master.User" scope="application"/>
             Логин: <%= user.getUser()%><br>
             ФИО: <%= user.getFio()%><br>
             Дата рождения: <%= user.getDate()%><br>
