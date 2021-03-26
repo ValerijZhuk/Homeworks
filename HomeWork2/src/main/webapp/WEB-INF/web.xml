@@ -1,0 +1,160 @@
+<web-app version="5.0" xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         metadata-complete="false">
+    <display-name>Mk-JD2-XXX-XX</display-name>
+
+
+    <servlet>
+        <servlet-name>Dispatcher</servlet-name>
+        <servlet-class>by.it_academy.jd2.web.servlets.chat.Dispatcher</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CheckUser</servlet-name>
+        <servlet-class>by.it_academy.jd2.web.servlets.chat.CheckUser</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Registration</servlet-name>
+        <servlet-class>by.it_academy.jd2.web.servlets.chat.Registration</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddUser</servlet-name>
+        <servlet-class>by.it_academy.jd2.web.servlets.chat.AddUser</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>User</servlet-name>
+        <servlet-class>by.it_academy.jd2.web.servlets.chat.User</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UserList</servlet-name>
+        <servlet-class>by.it_academy.jd2.web.servlets.chat.UserList</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>RequestOutput</servlet-name>
+        <servlet-class>by.it_academy.jd2.web.servlets.chat.RequestOutput</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>FormRequest</servlet-name>
+        <servlet-class>by.it_academy.jd2.web.servlets.chat.FormRequest</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ChatServlet</servlet-name>
+        <servlet-class>by.it_academy.jd2.web.servlets.chat.ChatServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProgaServlet</servlet-name>
+        <servlet-class>by.it_academy.jd2.web.servlets.addName.ProgaServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>ProgaServlet</servlet-name>
+        <url-pattern>/ProgaServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ChatServlet</servlet-name>
+        <url-pattern>/ChatServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>FormRequest</servlet-name>
+        <url-pattern>/FormRequest</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>RequestOutput</servlet-name>
+        <url-pattern>/RequestOutput</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Dispatcher</servlet-name>
+        <url-pattern>/Dispatcher</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CheckUser</servlet-name>
+        <url-pattern>/CheckUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Registration</servlet-name>
+        <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddUser</servlet-name>
+        <url-pattern>/AddUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>User</servlet-name>
+        <url-pattern>/User</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserList</servlet-name>
+        <url-pattern>/UserList</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
+
+
+        <!--<web-app version="5.0" xmlns="https://jakarta.ee/xml/ns/jakartaee"-->
+        <!--         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+        <!--         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee-->
+        <!--         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"-->
+        <!--         metadata-complete="false">-->
+        <!--    <display-name>Mk-JD2-XXX-XX</display-name>-->
+
+        <!--    <welcome-file-list>-->
+        <!--        <welcome-file>signUp.jsp</welcome-file>-->
+        <!--    </welcome-file-list>-->
+
+
+        <!--    <servlet>-->
+        <!--        <servlet-name>HelloServlet</servlet-name>-->
+        <!--        <servlet-class>by.it_academy.jd2.web.servlets.HelloServlet</servlet-class>-->
+        <!--    </servlet>-->
+        <!--    <servlet-mapping>-->
+        <!--        <servlet-name>HelloServlet</servlet-name>-->
+        <!--        <url-pattern>/test</url-pattern>-->
+        <!--    </servlet-mapping>-->
+
+
+        <!--    <filter>-->
+        <!--        <filter-name>SecurityFilter</filter-name>-->
+        <!--        <filter-class>by.it_academy.jd2.web.filtres.SecurityFilter</filter-class>-->
+        <!--        <init-param>-->
+        <!--            <param-name>active</param-name>-->
+        <!--            <param-value>true</param-value>-->
+        <!--        </init-param>-->
+        <!--    </filter>-->
+
+        <!--    <filter-mapping>-->
+        <!--        <filter-name>SecurityFilter</filter-name>-->
+        <!--        <url-pattern>/hello</url-pattern>-->
+        <!--    </filter-mapping>-->
+
+        <!--    <listener>-->
+        <!--        <listener-class>by.it_academy.jd2.web.listeners.SessionChangeListener</listener-class>-->
+        <!--    </listener>-->
+
+        <!--</web-app>-->
