@@ -8,52 +8,52 @@
 
     <servlet>
         <servlet-name>Dispatcher</servlet-name>
-        <servlet-class>by.it_academy.jd2.web.servlets.chat.Dispatcher</servlet-class>
+        <servlet-class>master.Dispatcher</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>CheckUser</servlet-name>
-        <servlet-class>by.it_academy.jd2.web.servlets.chat.CheckUser</servlet-class>
+        <servlet-class>master.CheckUser</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>Registration</servlet-name>
-        <servlet-class>by.it_academy.jd2.web.servlets.chat.Registration</servlet-class>
+        <servlet-class>master.Registration</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>AddUser</servlet-name>
-        <servlet-class>by.it_academy.jd2.web.servlets.chat.AddUser</servlet-class>
+        <servlet-class>master.AddUser</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>User</servlet-name>
-        <servlet-class>by.it_academy.jd2.web.servlets.chat.User</servlet-class>
+        <servlet-class>master.User</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>UserList</servlet-name>
-        <servlet-class>by.it_academy.jd2.web.servlets.chat.UserList</servlet-class>
+        <servlet-class>master.UserList</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>RequestOutput</servlet-name>
-        <servlet-class>by.it_academy.jd2.web.servlets.chat.RequestOutput</servlet-class>
+        <servlet-class>master.RequestOutput</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>FormRequest</servlet-name>
-        <servlet-class>by.it_academy.jd2.web.servlets.chat.FormRequest</servlet-class>
+        <servlet-class>master.FormRequest</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>ChatServlet</servlet-name>
-        <servlet-class>by.it_academy.jd2.web.servlets.chat.ChatServlet</servlet-class>
+        <servlet-class>master.ChatServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>ProgaServlet</servlet-name>
-        <servlet-class>by.it_academy.jd2.web.servlets.addName.ProgaServlet</servlet-class>
+        <servlet-class>master.ProgaServlet</servlet-class>
     </servlet>
 
 
