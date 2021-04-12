@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<%@ page import="core.dto.AllFlights" %>
+<%@ page import="core.dto.Flights" %>
+
+<%@ page import="java.sql.Connection" %>
+<%@ page import="jakarta.servlet.http.HttpSession" %>
+<%@ page import="java.time.LocalDate" %>
+<%@ page import="java.util.List" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<html>
+<head>
+    <title>Title</title>
+
+</head>
+<body>
+
+<h1>Список рейсов</h1>
+<table border="2">
+    <body>
+
+    <p>Параметры поиска:</p>
+    <tr>
+        <c:if test="${!scheduledDeparture.equals('2017-01-01')}">
+            <td>${scheduledDeparture}</td>
+        </c:if>
+        <c:if test="${scheduledDeparture.equals('2017-01-01')}">
+            <td>Параметр на задан</td>
+        </c:if>
+
+        <td>${departureAirport}</td>
+        <c:if test="${!scheduledArrival.equals('2017-01-01')}">
+            <td>${scheduledArrival}</td>
+        </c:if>
+        <c:if test="${scheduledArrival.equals('2017-01-01')}">
+            <td>Параметр на задан</td>
+        </c:if>
+
+        <td>${arrivalAirport}</td>
+
+    </tr>
+    </body>
+</table>
+<br><br>
+<hr>
+
+<form method="post" action="flight">
+
+    <c:if test="${list.size()==0}">
+        <p>Рейсов с заданными параметрами не найдено</p>
+    </c:if>
+    <c:if test="${list.size()>0}">
+        <table border="2">
+            <body>
+            <tr>
+                <td>${title.getFlight_no()}</td>
+                <td>${title.getStatus()}</td>
+                <td>${title.getScheduled_departure()}</td>
+                <td>${title.getScheduled_arrival()}</td>
+                <td>${title.getDeparture_airport()}</td>
+                <td>${title.getArrival_airport()}</td>
+            </tr>
+            <c:forEach items="${list}"
+                       var="fly">
+
+                <tr>
+                    <td>${fly.getFlight_no()}</td>
+                    <td>${fly.getStatus()}</td>
+                    <td>${fly.getScheduled_departure()}</td>
+                    <td>${fly.getScheduled_arrival()}</td>
+                    <td>${fly.getDeparture_airport()}</td>
+                    <td>${fly.getArrival_airport()}</td>
+                </tr>
+
+            </c:forEach>
+            </body>
+        </table>
+    </c:if>
+
+</form>
+
+<br>
+<hr>
+<form method="get" action="choice">
+
+    <button type="submit">Назад</button>
+    <br><br>
+</form>
+</body>
+</html>
